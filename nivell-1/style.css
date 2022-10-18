@@ -1,0 +1,83 @@
+.container{
+    background-color: white;
+    width: auto;
+    max-width:1200px;
+    margin: 20px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content:space-around;
+
+    
+}
+
+.black{
+    background-color: black;
+}
+.Header{
+    height: auto;
+    top: 0%;
+    margin-bottom: 20px;
+}
+.h-top{
+    height: 50px;
+    background-color: #2d4059;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr ;
+    margin: 20px 20px 10px 20px;
+    justify-content: space-around;
+    gap: 20px;
+    grid-template-areas: ' div1 div2 div3 ';
+    
+}
+.div1{
+    grid-area: div1;
+    margin-left: 20px;
+}
+.div2{
+    grid-area: div2;
+}
+.div3{
+    grid-area: div3;
+    margin-right: 20px;
+}
+.h-top  div{
+    height: 20px;
+    width:auto;
+    align-self: center;
+    background-color: #ea5455;
+}
+.h-low{
+    height: 50px;
+    background-color: #f07b3f;
+    margin: 0px 20px 20px 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-low div{
+    margin: 0px 20px;
+    height: 20px;
+    width: 100%;
+    background-color: #fed460;
+}
+.Body{
+    height: 175px;
+    margin-bottom: 20px;
+}
+.Footer{
+    height:auto;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer div{
+    margin: 20px;
+    width: 100%;
+    height: 20px;
+    background-color: #e6af2e;
+}
+
