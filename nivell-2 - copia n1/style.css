@@ -142,20 +142,22 @@
 .b-right div:first-child{
     margin-top: 20px;
 }
-
-.Footer{
-    height:auto;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+Footer{
+    color: #666565;
+    height: 40px;
+    margin: 10px 80px 0 80px;
+background-color: #d8d7d7;
 }
 
-.Footer div{
-    margin: 20px;
-    width: 100%;
-    height: 20px;
-    background-color: #e6af2e;
+Footer div{
+    padding: 11px 0;
+    margin: 0 10px;
+    background-color: #f5f1f1;
+    text-align: center;
+}
+footer div>h4{
+    padding: auto;
+    display: inline;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
