@@ -2,12 +2,15 @@
     max-width: 1200px;
     margin: auto;
     background-color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-content: center;
-    flex-direction: column;
     align-content:space-around;
     font-family: 'Proza Libre', sans-serif;
-    
+    animation-name: cale;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 
 .black{
@@ -24,12 +27,16 @@
     height: 209px;
     width: auto;
     margin: 0 80px 10px 80px;
-    display: flex;
-    flex-direction: column;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
     justify-content: space-between;
 }
 .logo{
     max-width: 50px;
+    animation-name: rev;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
     }
 a{
     all: unset;
@@ -40,6 +47,14 @@ a{
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     gap: 0 15px;
+    animation-name: cale;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+@keyframes cale {
+    0% {transform: scale(1);}
+    50%{transform: scale(0.5);}
+    100%{transform: scale(1);}
 }
 ul{
     list-style: none;
@@ -114,11 +129,24 @@ div>i:hover{
     opacity: .8;
     color: #f49b7a;
     background-color: rgba(0, 0, 0, 0.1);
+    animation-name: in;
+    animation-duration: 4s;
+}
+@keyframes in {
+    0% { opacity: 0.1; transform: translateY(100px);}
+    100% {opacity: 1; transform: translateX(0);}
+    
 }
 .banner h2{
     padding-top: 16px;
     font-weight: lighter;
     align-self: end;
+}
+
+@keyframes rev {
+    0% {transform:rotate(0deg);}
+    50% {transform:rotate(180deg);}
+   100% {transform:rotate(360deg);}
 }
 .Body{
     height: auto;
@@ -127,7 +155,6 @@ div>i:hover{
     grid-template-columns: 3fr 1fr ;
     justify-content: center;
     column-gap: 10px;
-    
 }
 
 .b-left{
